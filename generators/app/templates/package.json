@@ -1,0 +1,80 @@
+{
+  "name": "<%= packageName %>",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "babel src --out-dir dist --ignore **/__tests__/**",
+    "dev": "NODE_ENV=development webpack-dev-server",
+    "lint": "eslint --ext .jsx,.js src",
+    "test": "npm run lint && jest"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.2.0",
+    "html-webpack-plugin": "^3.1.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.6.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-runtime"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "not ie <= 10"
+            ]
+          }
+        }
+      ],
+      "react",
+      "stage-2"
+    ]
+  },
+  "jest": {
+    "setupFiles": [
+      "./test-setup.js"
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "author": {
+    "name": "<%= authorName %>",
+    "email": "<%= authorEmail %>"
+  },
+  "license": "MIT"
+}
