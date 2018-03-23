@@ -1,0 +1,30 @@
+{
+  "name": "generator-react-base-module",
+  "version": "0.1.0",
+  "description": "Generator for creating react modules",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "react",
+    "module"
+  ],
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^2.0.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.5.3"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "author": {
+    "name": "Mattias Ljunge",
+    "email": "mattias.ljunge@gmail.com"
+  },
+  "license": "MIT"
+}
