@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const pkg = require('./package').name;
 
 module.exports = {
+  mode: 'development',
   entry: './docs/index.jsx',
   output: {
     path: path.join(__dirname, 'dist'),
