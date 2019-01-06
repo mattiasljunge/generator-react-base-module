@@ -52,7 +52,6 @@ module.exports = class extends Generator {
     this._copyFile('.gitattributes');
     this._copyFile('.gitignore');
     this._copyFile('.nontemplates');
-    this._copyFile('CHANGELOG.md');
     this._copyFile('README.md');
     this._copyFile('test-setup.js');
     this._copyFile('wallaby.js');
