@@ -54,7 +54,7 @@ module.exports = class extends Generator {
     this._copyFile('.nontemplates');
     this._copyFile('README.md');
     this._copyFile('test-setup.js');
-    this._copyFile('wallaby.js');
+    this._copyFile('wallaby.config.js');
     this._copyFile('webpack.config.js');
 
     this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'), {
