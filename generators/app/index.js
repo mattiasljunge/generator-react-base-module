@@ -52,10 +52,13 @@ module.exports = class extends Generator {
     this._copyFile('.gitattributes');
     this._copyFile('.gitignore');
     this._copyFile('.nontemplates');
-    this._copyFile('README.md');
+    this._copyFile('babel.config.js');
+    this._copyFile('jest.config.js');
+    this._copyFile('prettier.config.js');
     this._copyFile('test-setup.js');
     this._copyFile('wallaby.config.js');
     this._copyFile('webpack.config.js');
+    this._copyFile('README.md');
 
     this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'), {
       packageName: this.answers.packageName,
