@@ -3,7 +3,7 @@ import React from 'react';
 import App from '../app';
 
 describe('App', () => {
-  it('renders component', () => {
+  it('is rendered', () => {
     const component = shallow(<App />);
     expect(component.text()).toBe('Hello world!');
   });
