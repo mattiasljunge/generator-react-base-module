@@ -63,6 +63,10 @@ module.exports = class extends Generator {
       authorEmail: this.answers.authorEmail,
     });
 
+    this.fs.copyTpl(this.templatePath('package-lock.json'), this.destinationPath('package-lock.json'), {
+      packageName: this.answers.packageName,
+    });
+
     this.fs.copyTpl(this.templatePath('LICENSE'), this.destinationPath('LICENSE'), {
       authorName: this.answers.authorName,
       authorEmail: this.answers.authorEmail,
