@@ -45,25 +45,6 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-runtime"
-    ]
-  },
-  "jest": {
-    "setupFiles": [
-      "./test-setup.js"
-    ]
-  },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
   "author": {
     "name": "<%= authorName %>",
     "email": "<%= authorEmail %>"
