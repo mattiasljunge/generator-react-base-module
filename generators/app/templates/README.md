@@ -4,7 +4,7 @@
 
 Start a developent server with:
  
-    $ npm run dev
+    $ npm start
 
 and navigate to [http://localhost:8080]()
 
@@ -22,7 +22,7 @@ You can test the module either using jest, or using wallabyJS plugin.
 
 #### Using npm with jest 
 
-    $ npm run test
+    $ npm test
 
 #### Using wallaby
 

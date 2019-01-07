@@ -46,7 +46,6 @@ module.exports = class extends Generator {
 
   writing() {
     this._copy('./src', './src');
-    this._copy('./docs', './docs');
     this._copyFile('.editorconfig');
     this._copyFile('.eslintrc.json');
     this._copyFile('.gitattributes');
