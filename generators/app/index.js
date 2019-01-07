@@ -46,10 +46,10 @@ module.exports = class extends Generator {
 
   writing() {
     this._copy('./src', './src');
+    this._copy('_gitignore', '.gitignore');
     this._copyFile('.editorconfig');
     this._copyFile('.eslintrc.json');
     this._copyFile('.gitattributes');
-    this._copyFile('.gitignore');
     this._copyFile('.nontemplates');
     this._copyFile('babel.config.js');
     this._copyFile('jest.config.js');
