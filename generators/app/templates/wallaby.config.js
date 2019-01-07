@@ -1,5 +1,9 @@
 module.exports = wallaby => ({
-  files: ['src/**/*.js*', '!src/**/__tests__/*.js*'],
+  files: [
+    'src/**/*.js*',
+    { pattern: 'babel.config.js', instrument: false },
+    '!src/**/__tests__/*.js*',
+  ],
   tests: ['src/**/__tests__/*.js*'],
   compilers: {
     'src/**/*.js*': wallaby.compilers.babel(),
