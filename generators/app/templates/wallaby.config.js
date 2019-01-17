@@ -3,6 +3,7 @@ module.exports = wallaby => ({
     'src/**/*.js*',
     { pattern: 'babel.config.js', instrument: false },
     '!src/**/__tests__/*.js*',
+    'test-setup.js',
   ],
   tests: ['src/**/__tests__/*.js*'],
   compilers: {
